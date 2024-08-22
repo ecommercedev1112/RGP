@@ -316,9 +316,11 @@
           {%- endif -%}
         </a>
       </div>
-      <div class="buy-button">
-        {% render 'header-buy-buttons' %}
-      </div>
+      {% if template == 'product' %}
+        <div class="buy-button">
+          {% render 'header-buy-buttons' %}
+        </div>
+      {% endif %}
     </div>
 
     {%- liquid

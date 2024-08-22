@@ -1609,6 +1609,9 @@ button.product-form__submit span {
   display: flex;
   gap: 20px; 
 }
+.product__text.inline-richtext {
+  margin-top: 0;
+}
 @media(max-width: 768px) {
   .custom-image-text__wrapper.desktop {
     display: none;

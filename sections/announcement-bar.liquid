@@ -3,7 +3,7 @@
 {% style %}
   .utility-bar {
     background-image:url('{{ section.settings.bg_img.src | img_url: 'master' }}');
-    background-size: contain;
+    background-size: cover;
     width: 100%;
     background-repeat: no-repeat;
   }
@@ -13,7 +13,7 @@
   .utility-bar .mobile {
     display: none;
   }
-  @media(max-width: 1024px) {
+  @media(max-width: 1180px) {
     .announcement-bar img {
       width: 40%;
       height: 50px;
@@ -24,7 +24,10 @@
       display: none;
     }
     .utility-bar .mobile {
-      display: block;
+      display: block; 
+    }
+    .announcement-bar img {
+      width: 100%;
     }
   }
 {% endstyle %}
